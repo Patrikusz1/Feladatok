@@ -34,7 +34,7 @@ namespace Test
                 string m1 = _1_feladat.Visszafejt(c1.Substring(0, k.Length), k);
                 string m2 = _1_feladat.Visszafejt(c2.Substring(0, k.Length), k);
 
-                Assert.That(m1.Split(' ').Where(sz => sz.Length > 0), Is.All.Matches<string>(sz => true)); // csak ne dobjon kivételt
+                Assert.That(m1.Split(' ').Where(sz => sz.Length > 0), Is.All.Matches<string>(sz => true));
                 Assert.That(m1.Split(' '), Is.All.Not.Null);
             }
         }
